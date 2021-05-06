@@ -1,0 +1,33 @@
+{
+  "name": "myapp1",
+  "version": "1.0.0",
+  "description": "Node Rest Api With Authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r esm ."
+  },
+  "keywords": [
+    "AUTHENTICTION",
+    "NODEJS",
+    "APP"
+  ],
+  "author": "zeba ali",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "consola": "^2.15.3",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
