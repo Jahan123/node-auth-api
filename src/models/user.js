@@ -64,7 +64,7 @@ UserSchema.methods.generateToken = async function () {
 };
 
 UserSchema.methods.resetgeneratePassword = function () {
-  this.resetPasswordExpiry = Date.now() * 36000000;
+  this.resetPasswordExpiry = new Date(Date.now() + 36000000);
   this.resetPasswordToken = randomBytes(20).toString("hex");
 };
 

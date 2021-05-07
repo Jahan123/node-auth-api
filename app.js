@@ -5,9 +5,12 @@ import mongoose from "mongoose";
 import consola from "consola";
 import { APP_DB, APP_PORT } from "./src/constants/index";
 import UserRouter from "./src/apis/user";
+import passport from "passport";
+import "./src/middlewares/passport-authenticate";
 const app = express();
 app.use(cors());
 app.use(json());
+app.use(passport.initialize());
 app.use("/users", UserRouter);
 
 const main = async () => {

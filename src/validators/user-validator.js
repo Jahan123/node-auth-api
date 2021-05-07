@@ -16,3 +16,4 @@ const email = check("email", "Please Provide Valid Email.")
 
 export const RegistrationValidation = [email, password, username, name];
 export const AuthorizationValidation = [username, password];
+export const ResetPasswordValidation = [email];

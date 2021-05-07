@@ -6,6 +6,9 @@ const ReturnResponse = (
   token = null,
   user = null
 ) => {
+  if (token === null && user !== null) {
+    return res.status(status).json({ message, success, user });
+  }
   if (token !== null && user === null) {
     return res.status(status).json({ message, success, token });
   }
