@@ -1,7 +1,6 @@
 import passport from "passport";
 import { ExtractJwt, Strategy } from "passport-jwt";
 import { APP_SECRET_KEY } from "../constants/index";
-import ReturnResponse from "../functions/response-builder";
 import User from "../models/user";
 const opts = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
